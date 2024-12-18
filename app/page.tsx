@@ -8,11 +8,11 @@ import Image from 'next/image';
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
-      <div className="relative w-0 h-0 border-l-[15px] border-r-[15px] border-b-[26px] border-l-transparent border-r-transparent border-b-black">
+      <div className="">
         {/* <AcmeLogo /> */}
         <img
-  src="/opengraph-image.png" className="hidden md:block"
-  alt="Screenshots of the dashboard project showing desktop version"
+  src="/Responsive_360x82-1.png" className="hidden md:block h-15 w-15"
+  alt="Responsive"
 />
       </div>
    
@@ -33,18 +33,18 @@ export default function Page() {
             <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
           </Link>
         </div>
-        <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
-        <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
+        <div className="flex items-center justify-center p-6 md:w-3/5 md:px-2 md:py-12">
+        <div className="flex items-center justify-center p-6 md:w-4/5 md:px-2 md:py-12">
      
         <Image
-        src="/hero-desktop.png"
+        src="/Product_ResponseProjects-1024x997.png"
         width={1000}
         height={760}
         className="hidden md:block"
         alt="Screenshots of the dashboard project showing desktop version"
       />
       <Image
-        src="/hero-mobile.png"
+        src="/Product_ResponseProjects-1024x997.png"
         width={560}
         height={620}
         className="block md:hidden"
