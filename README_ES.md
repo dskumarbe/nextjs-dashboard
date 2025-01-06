@@ -2,7 +2,7 @@
 
 ¡Bienvenido al curso Next.js App Router! En este curso interactivo gratuito, aprenderá las características principales de Next.js mediante la creación de una aplicación web completa.
 
-![Vista princiapal de la Aplicación Acme en múltiples dispositivos](https://nextjs.org/_next/image?url=%2Flearn%2Fcourse-explainer.png&w=750&q=75&dpl=dpl_Ejtt9BCyCFNeRJdBoVsM9Es9x8xe)
+![Vista princiapal de la Aplicación Responsive en múltiples dispositivos](https://nextjs.org/_next/image?url=%2Flearn%2Fcourse-explainer.png&w=750&q=75&dpl=dpl_Ejtt9BCyCFNeRJdBoVsM9Es9x8xe)
 
 Para este curso, crearemos una versión simplificada de un panel financiero que tiene:
 
@@ -297,8 +297,8 @@ En el capítulo anterior, aprendiste cómo diseñar tu aplicación Next.js. Siga
             <p
             className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}
             >
-            <strong>Welcome to Acme.</strong> This is the example for the{' '}
-            <a href="https://nextjs.org/learn/" className="text-blue-500">
+            <strong>Welcome to Responsive.</strong> This is the example for the{' '}
+            <a href="https://nextjs.org/learn/" className="text-green-500">
                 Next.js Learn Course
             </a>
             , brought to you by Vercel.
@@ -316,7 +316,7 @@ En el capítulo anterior, aprendiste cómo diseñar tu aplicación Next.js. Siga
         export default function Page() {
         return (
             <main className="flex min-h-screen flex-col p-6">
-            <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
+            <div className="flex h-20 shrink-0 items-end rounded-lg bg-green-500 p-4 md:h-52">
                 <AcmeLogo />
                 {/* ... */}
             </div>
@@ -331,7 +331,7 @@ En el capítulo anterior, aprendiste cómo diseñar tu aplicación Next.js. Siga
     - **¿Por qué optimizar imágenes?**
     Next.js puede ofrecer recursos estáticos, como imágenes, en la carpeta /public de nivel superior. Se puede hacer referencia a los archivos dentro de /public en su aplicación.
 
-    Si miras dentro de la carpeta /public, verás que hay dos imágenes: **hero-desktop.png** y **hero-mobile.png**. Estas dos imágenes son completamente diferentes y se mostrarán dependiendo de si el dispositivo del usuario es de escritorio o móvil.
+    Si miras dentro de la carpeta /public, verás que hay dos imágenes: **Product_ResponseProjects-1024x997.png* y . Estas dos imágenes son completamente diferentes y se mostrarán dependiendo de si el dispositivo del usuario es de escritorio o móvil.
 
     Con HTML normal, agregaría una imagen de la siguiente manera:
 
@@ -377,7 +377,7 @@ En el capítulo anterior, aprendiste cómo diseñar tu aplicación Next.js. Siga
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
         {/* Add Hero Images Here */}
         <Image
-            src="/hero-desktop.png"
+            src="/Product_ResponseProjects-1024x997.png"
             width={1000}
             height={760}
             className="hidden md:block"
@@ -575,9 +575,9 @@ export default function NavLinks() {
             key={link.name}
             href={link.href}
             className={clsx(
-              'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3',
+              'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-green-600 md:flex-none md:justify-start md:p-2 md:px-3',
               {
-                'bg-sky-100 text-blue-600': pathname === link.href,
+                'bg-sky-100 text-green-600': pathname === link.href,
               },
             )}
           >
@@ -2581,7 +2581,7 @@ export default function Error({
     <main className="flex h-full flex-col items-center justify-center">
       <h2 className="text-center">Something went wrong!</h2>
       <button
-        className="mt-4 rounded-md bg-blue-500 px-4 py-2 text-sm text-white transition-colors hover:bg-blue-400"
+        className="mt-4 rounded-md bg-green-500 px-4 py-2 text-sm text-white transition-colors hover:bg-green-400"
         onClick={
           // Attempt to recover by trying to re-render the invoices route
           () => reset()
@@ -2659,7 +2659,7 @@ export default function NotFound() {
       <p>Could not find the requested invoice.</p>
       <Link
         href="/dashboard/invoices"
-        className="mt-4 rounded-md bg-blue-500 px-4 py-2 text-sm text-white transition-colors hover:bg-blue-400"
+        className="mt-4 rounded-md bg-green-500 px-4 py-2 text-sm text-white transition-colors hover:bg-green-400"
       >
         Go Back
       </Link>
@@ -2731,7 +2731,7 @@ Luego ejecute por terminal: `npm run lint`, si no tiene errores debería observa
 ✔ No ESLint warnings or errors
 ```
 
-> Hay un par de [reglas](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/main/docs/rules) cuando se usa atributos ARIA, y si es nuevo en la accesibilidad, puede ser difícil saber si los está utilizando correctamente. Puede usar este complemento para ayudarlo en el camino. 
+
 
 ### Mejora de la accesibilidad de formulario
 
@@ -3095,7 +3095,7 @@ export default function LoginPage() {
   return (
     <main className="flex items-center justify-center md:h-screen">
       <div className="relative mx-auto flex w-full max-w-[400px] flex-col space-y-2.5 p-4 md:-mt-32">
-        <div className="flex h-20 w-full items-end rounded-lg bg-blue-500 p-3 md:h-36">
+        <div className="flex h-20 w-full items-end rounded-lg bg-green-500 p-3 md:h-36">
           <div className="w-32 text-white md:w-36">
             <AcmeLogo />
           </div>
@@ -3460,7 +3460,7 @@ export default function SideNav() {
             await signOut();
           }}
         >
-          <button className="flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3">
+          <button className="flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-green-600 md:flex-none md:justify-start md:p-2 md:px-3">
             <PowerIcon className="w-6" />
             <div className="hidden md:block">Sign Out</div>
           </button>
@@ -3528,7 +3528,7 @@ En su diseño de raíz, cree un nuevo objeto de metadatos con los siguientes cam
 import { Metadata } from 'next';
  
 export const metadata: Metadata = {
-  title: 'Acme Dashboard',
+  title: 'Responsive Dashboard',
   description: 'The official Next.js Course Dashboard, built with App Router.',
   metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
 };
@@ -3548,7 +3548,7 @@ Por ejemplo, en la página **/dashboard/invoices**, puede agregar el título de 
 import { Metadata } from 'next';
  
 export const metadata: Metadata = {
-  title: 'Invoices | Acme Dashboard',
+  title: 'Invoices | Responsive Dashboard',
 };
 ```
 
@@ -3564,8 +3564,8 @@ import { Metadata } from 'next';
  
 export const metadata: Metadata = {
   title: {
-    template: '%s | Acme Dashboard',
-    default: 'Acme Dashboard',
+    template: '%s | Responsive Dashboard',
+    default: 'Responsive Dashboard',
   },
   description: 'The official Next.js Learn Dashboard built with App Router.',
   metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),

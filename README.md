@@ -1,6 +1,6 @@
-# Acme dashboard full web application.
+# Responsive dashboard full web application.
 
-![Acme full web application](https://nextjs.org/_next/image?url=%2Flearn%2Fcourse-explainer.png&w=750&q=75&dpl=dpl_Ejtt9BCyCFNeRJdBoVsM9Es9x8xe)
+![Responsive full web application](https://nextjs.org/_next/image?url=%2Flearn%2Fcourse-explainer.png&w=750&q=75&dpl=dpl_Ejtt9BCyCFNeRJdBoVsM9Es9x8xe)
 
 ## Next.js App Router Course - Starter
 
@@ -208,7 +208,7 @@ By adding Inter to the <body> element, the font will be applied throughout your 
 
 Next.js can serve static assets, like images, under the top-level /public folder. Files inside /public can be referenced in your application.
 
-If you look inside the folder, you'll see there's are two images: hero-desktop.png and hero-mobile.png. These two images are completely different, and they'll be shown depending on the user's device is a desktop or mobile.
+If you look inside the folder, you'll see there's are two images: Product_ResponseProjects-1024x997.png. These two images are completely different, and they'll be shown depending on the user's device is a desktop or mobile.
 
 With regular HTML, you would add an image as follows:
 
@@ -242,7 +242,7 @@ In your /app/page.tsx file, import the component from next/image. Then, add the 
 
 ```tsx
     <Image
-        src="/hero-desktop.png"
+        src="/Product_ResponseProjects-1024x997.png"
         width={1000}
         height={760}
         className="hidden md:block"
@@ -1909,7 +1909,7 @@ export default function LoginPage() {
   return (
     <main className="flex items-center justify-center md:h-screen">
       <div className="relative mx-auto flex w-full max-w-[400px] flex-col space-y-2.5 p-4 md:-mt-32">
-        <div className="flex h-20 w-full items-end rounded-lg bg-blue-500 p-3 md:h-36">
+        <div className="flex h-20 w-full items-end rounded-lg bg-green-500 p-3 md:h-36">
           <div className="w-32 text-white md:w-36">
             <AcmeLogo />
           </div>
@@ -2172,7 +2172,7 @@ In your root layout, create a new metadata object with the following fields:
 import { Metadata } from 'next';
  
 export const metadata: Metadata = {
-  title: 'Acme Dashboard',
+  title: 'Responsive Dashboard',
   description: 'The official Next.js Course Dashboard, built with App Router.',
   metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
 };
@@ -2197,8 +2197,8 @@ import { Metadata } from 'next';
  
 export const metadata: Metadata = {
   title: {
-    template: '%s | Acme Dashboard',
-    default: 'Acme Dashboard',
+    template: '%s | Responsive Dashboard',
+    default: 'Responsive Dashboard',
   },
   description: 'The official Next.js Learn Dashboard built with App Router.',
   metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
